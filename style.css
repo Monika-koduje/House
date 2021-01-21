@@ -24,6 +24,7 @@ span {
 span:hover {
     color: #00ff00;
     background-color: #888;
+    pading: 15px;
 }
 
 div {
