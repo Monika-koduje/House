@@ -13,6 +13,7 @@ span {
     letter-spacing: 4px;
     width: 10%;
     margin: 10px;
+    padding: 10px;
     text-align: center;
     color: #fff;
     background-color: #f00;
@@ -23,6 +24,7 @@ span {
 span:hover {
     color: #00ff00;
     background-color: #888;
+    width: 30%;
 }
 
 div {
