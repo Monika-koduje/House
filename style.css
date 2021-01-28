@@ -1,127 +1,121 @@
-@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 span {
-    display: block;
-    font-family: 'Yusei Magic', sans-serif;
-    font-size: 20px;
-    letter-spacing: 4px;
-    width: 10%;
-    margin: 10px;
-    padding: 10px;
-    text-align: center;
-    color: #fff;
-    background-color: #f00;
-    cursor: pointer;
-    transition: 0.3s;
+  display: block;
+  font-family: "Yusei Magic", sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 4px;
+  width: 10%;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+  background-color: #f00;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 span:hover {
-    color: #00ff00;
-    background-color: #888;
-    width: 30%;
+  color: #00ff00;
+  background-color: #888;
+  width: 30%;
 }
 
 div {
-    position: absolute;
-    width: 50vh;
-    height: 50vh;
-    top: 100px;
-    left: 10px;
-    background-color: black;
-    transition: 1s;
-    z-index: 1;
+  position: absolute;
+  width: calc(55vh / 1.41);
+  height: calc(55vh / 1.41);
+  top: 80%;
+  left: 1%;
+  background-color: black;
+  transition: 1s;
+  z-index: 1;
 }
 
-div+div {
-    position: absolute;
-    width: 71vh;
-    height: 50vh;
-    top: 200px;
-    left: 10px;
-    background-color: rgb(34, 109, 34);
-    transition: 0.5s;
+div + div {
+  width: 55vh;
+  height: 40vh;
+  top: 30%;
+  left: 1%;
+  background-color: rgb(34, 109, 34);
+  transition: 0.5s;
 }
 
-div+div+div {
-    position: absolute;
-    width: 10vh;
-    height: 10vh;
-    top: 300px;
-    left: 10px;
-    background-color: aqua;
-    transition: 1.3s;
+div + div + div {
+  width: 10vh;
+  height: 10vh;
+  top: 45%;
+  left: 3%;
+  background-color: aqua;
+  transition: 1.3s;
 }
 
-div+div+div+div {
-    position: absolute;
-    width: 10vh;
-    height: 10vh;
-    top: 400px;
-    left: 10px;
-    background-color: aqua;
-    transition: 1.3s;
+div + div + div + div {
+  width: 10vh;
+  height: 10vh;
+  top: 65%;
+  left: 3%;
+  background-color: aqua;
+  transition: 1.3s;
 }
 
-div+div+div+div+div {
-    position: absolute;
-    width: 15vh;
-    height: 20vh;
-    top: 500px;
-    left: 10px;
-    background-color: #f00;
-    transition: 1.0s;
+div + div + div + div + div {
+  width: 10vh;
+  height: 15vh;
+  top: 85%;
+  left: 3%;
+  background-color: #f00;
+  transition: 1s;
 }
 
-div+div+div+div+div+div {
-    position: absolute;
-    width: 5vh;
-    height: 15vh;
-    top: 600px;
-    left: 10px;
-    background-color: yellow;
-    transition: 1.5s;
+div + div + div + div + div + div {
+  width: 5vh;
+  height: 15vh;
+  top: 90%;
+  left: 10%;
+  background-color: yellow;
+  transition: 1.5s;
 }
 
-span:hover+div {
-    display: block;
-    top: 100px;
-    left: 564px;
-    transform: rotate(45deg);
+span:hover + div {
+  top: calc(50% - 20vh);
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
 }
 
-span:hover+div+div {
-    display: block;
-    top: 250px;
-    left: 500px;
+span:hover + div + div {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-span:hover+div+div+div {
-    display: block;
-    top: 300px;
-    left: 555px;
+span:hover + div + div + div {
+  top: 50%;
+  left: 50%;
+  transform: translate(-200%, -150%);
 }
 
-span:hover+div+div+div+div {
-    display: block;
-    top: 300px;
-    left: 800px;
+span:hover + div + div + div + div {
+  top: 50%;
+  left: 50%;
+  transform: translate(100%, -150%);
 }
 
-span:hover+div+div+div+div+div {
-    display: block;
-    top: 429px;
-    left: 664px;
+span:hover + div + div + div + div + div {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 34%);
 }
 
-span:hover+div+div+div+div+div+div {
-    display: block;
-    top: 100px;
-    left: 800px;
-    z-index: 0;
+span:hover + div + div + div + div + div + div {
+  top: 50%;
+  left: 50%;
+  transform: translate(310%, -240%);
+  z-index: -1;
 }
